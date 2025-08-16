@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Calculadora Simples</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contagem Regressiva - 30 Anos</title>
+<link href="/site-30th-abner/styles.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" readonly>
-        <input type="button" value="1" onclick="addToDisplay('1')">
-        <input type="button" value="2" onclick="addToDisplay('2')">
-        <input type="button" value="3" onclick="addToDisplay('3')">
-        <input type="button" value="+" onclick="addToDisplay('+')">
-        <input type="button" value="4" onclick="addToDisplay('4')">
-        <input type="button" value="5" onclick="addToDisplay('5')">
-        <input type="button" value="6" onclick="addToDisplay('6')">
-        <input type="button" value="-" onclick="addToDisplay('-')">
-        <input type="button" value="7" onclick="addToDisplay('7')">
-        <input type="button" value="8" onclick="addToDisplay('8')">
-        <input type="button" value="9" onclick="addToDisplay('9')">
-        <input type="button" value="*" onclick="addToDisplay('*')">
-        <input type="button" value="C" onclick="clearDisplay()">
-        <input type="button" value="0" onclick="addToDisplay('0')">
-        <input type="button" value="=" onclick="calculate()">
-        <input type="button" value="/" onclick="addToDisplay('/')">
-    </div>
+  <header>
+    <h1>🎮 Contagem Regressiva - 30 Anos 🎉</h1>
+    <p class="subtitle">Cada dia abre na data correspondente — clique somente quando desbloqueado.</p>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeBtn" class="close">×</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalText"></p>
+      <div class="modal-actions">
+        <button id="backBtn" class="btn">Voltar</button>
+      </div>
+    </div>
+  </div>
+
+<script src="/site-30th-abner/script.js"></script>
 </body>
 </html>
